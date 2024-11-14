@@ -37,6 +37,7 @@ rsync -avz --out-format="   %n" $BBB_ADDRESS:/usr/include/alsa /sysroot/usr/incl
 mkdir -p ./sysroot/usr/local/lib
 mkdir -p ./sysroot/usr/local/include
 rsync -avz --out-format="   %n" $BBB_ADDRESS:/usr/local/include/prussdrv.h /sysroot/usr/local/include
+rsync -avz --out-format="   %n" $BBB_ADDRESS:/usr/local/include/pruss_intc_mapping.h /sysroot/usr/local/include
 rsync -avz --out-format="   %n" $BBB_ADDRESS:/usr/local/include/seasocks /sysroot/usr/local/include
 rsync -avz --out-format="   %n" $BBB_ADDRESS:/usr/local/lib/libpd.* /sysroot/usr/local/lib
 rsync -avz --out-format="   %n" $BBB_ADDRESS:/usr/local/lib/libseasocks.* /sysroot/usr/local/lib
