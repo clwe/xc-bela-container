@@ -3,7 +3,7 @@
 {
 	"name": "xc-bela",
 	"context": ".",
-	"image": "rodrigodzf/xc-bela:latest",
+	"image": "xc-bela-image:latest",
 	"workspaceFolder": "/workspace",
 	"settings": {
 		"terminal.integrated.shell.linux": "/bin/bash",
@@ -18,7 +18,8 @@
 	"workspaceMount": "source=xc-bela-src,target=/workspace,type=volume",
 	"mounts": [
 		"source=xc-bela-extensions,target=/root/.vscode-server/extensions,type=volume",
-		"source=xc-bela-bashhistory,target=/commandhistory,type=volume"
+		"source=xc-bela-bashhistory,target=/commandhistory,type=volume",
+		"source=./Bela/core,target=/mnt/Bela/core,type=bind,consistency=cached"
 	],
 	"extensions": [
 		"llvm-vs-code-extensions.vscode-clangd",
