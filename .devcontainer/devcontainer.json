@@ -18,8 +18,7 @@
 	"workspaceMount": "source=xc-bela-src,target=/workspace,type=volume",
 	"mounts": [
 		"source=xc-bela-extensions,target=/root/.vscode-server/extensions,type=volume",
-		"source=xc-bela-bashhistory,target=/commandhistory,type=volume",
-		"source=./Bela/core,target=/mnt/Bela/core,type=bind,consistency=cached"
+		"source=xc-bela-bashhistory,target=/commandhistory,type=volume"
 	],
 	"extensions": [
 		"llvm-vs-code-extensions.vscode-clangd",
