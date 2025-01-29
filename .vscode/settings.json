@@ -1,0 +1,16 @@
+{
+    "cmake.sourceDirectory": "/workspace/TrillSquare_LED_OSC",
+    "cmake.buildDirectory": "/workspace/TrillSquare_LED_OSC/build",
+    "cmake.configureArgs": [
+        "-DCMAKE_TOOLCHAIN_FILE=Toolchain.cmake"
+    ],
+    "C_Cpp.clang_format_fallbackStyle": "Visual Studio",
+    "C_Cpp.intelliSenseEngine": "disabled",
+    "clangd.checkUpdates": true,
+    "clangd.arguments": [//"-log=verbose", 
+                         "-pretty", 
+                         "--background-index", 
+                         "--query-driver=/usr/bin/arm-linux-gnueabihf-g++" //for cross compile usage
+                         //"--compile-commands-dir=/workspace/TrillSquare_LED_OSC/build" // only needed when build folder is not in project root
+                        ]
+}
